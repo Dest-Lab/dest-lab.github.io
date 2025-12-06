@@ -35,7 +35,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-19c65cef.js";
+            window.path_to_searchindex_js = "searchindex-3528733a.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-fc34a395.js"></script>
@@ -177,7 +177,7 @@
                         <h1 id="config-file"><a class="header" href="#config-file">Config file</a></h1>
 <h3 id="configuration-overview"><a class="header" href="#configuration-overview">Configuration Overview</a></h3>
 <p>When you open the Stryde configuration file for the first time<br><code>~/.config/stryde/config.toml</code> you will see something like this</p>
-<pre><code class="language-toml">using = "Stryde-Dark"
+<pre><code class="language-toml">theme = "Stryde-Dark"
 antialiasing = false
 list_text_size = 16
 input_text_size = 18
@@ -186,13 +186,14 @@ app_height = 500.0
 icon_size = 37
 show_apps = true
 close_on_launch = true
+font_name = " "
 </code></pre>
-<h4 id="using"><a class="header" href="#using"><strong>using</strong></a></h4>
+<h4 id="theme"><a class="header" href="#theme"><strong>theme</strong></a></h4>
 <p>Specifies which theme file Stryde should load
 <code>Stryde-Dark</code> is the default dark theme</p>
 <p>To use your own custom theme, create a toml file in the <code>themes</code> folder
 and replace the value with your filename:</p>
-<pre><code class="language-toml">using = "your_theme_name.toml"
+<pre><code class="language-toml">theme = "your_theme_name.toml"
 </code></pre>
 <h4 id="antialiasing"><a class="header" href="#antialiasing"><strong>antialiasing</strong></a></h4>
 <p>Enables smoothing for text and UI elements<br>Turning it on may improve visual quality but can reduce performance</p>
@@ -210,6 +211,8 @@ and replace the value with your filename:</p>
 <p>Show application when you start the app (if set to false it will show apps only when you search)</p>
 <h4 id="close_on_launch"><a class="header" href="#close_on_launch"><strong>close_on_launch</strong></a></h4>
 <p>Close the Stryde after opening an application</p>
+<h4 id="font_name"><a class="header" href="#font_name"><strong>font_name</strong></a></h4>
+<p>Change default font to a font installed on your system (example: “JetBrains Mono”)</p>
 
                     </main>
 
