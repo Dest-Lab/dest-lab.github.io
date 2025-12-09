@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Config file</title>
+        <title>List of keys</title>
 
 
         <!-- Custom HTML head -->
@@ -174,94 +174,53 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="config-file"><a class="header" href="#config-file">Config file</a></h1>
-<h3 id="configuration-overview"><a class="header" href="#configuration-overview">Configuration Overview</a></h3>
-<p>When you open the Stryde configuration file for the first time<br><code>~/.config/stryde/config.toml</code> you will see something like this</p>
-<pre><code class="language-toml">theme = "Stryde-Dark"
-antialiasing = false
-
-[window]
-width = 774
-height = 500
-
-[text]
-font_name = " "
-list_text_size = 16
-input_text_size = 18
-placeholder = "Type commands, search..."
-
-[layout]
-icon_size = 37
-padding_vertical = 0.0
-spacing = 5
-divider = true
-
-[behavior]
-show_apps = true
-close_on_launch = true
-highlight_style_text = false
-default_terminal = "kitty"
-
-[keybinds]
-close = "escape"
-open = "enter"
-navigation = ["arrowup", "arrowdown"]
-</code></pre>
-<h4 id="theme"><a class="header" href="#theme"><strong>theme</strong></a></h4>
-<p>Specifies which theme file Stryde should load
-<code>Stryde-Dark</code> is the default dark theme</p>
-<p>To use your own custom theme, create a toml file in the <code>themes</code> folder
-and replace the value with your filename:</p>
-<pre><code class="language-toml">theme = "your_theme_name.toml"
-</code></pre>
-<h4 id="antialiasing"><a class="header" href="#antialiasing"><strong>antialiasing</strong></a></h4>
-<p>Enables smoothing for text and UI elements<br>Turning it on may improve visual quality but can reduce performance</p>
-<h2 id="window"><a class="header" href="#window"><code>[window]</code></a></h2>
-<h4 id="width"><a class="header" href="#width"><strong>width</strong></a></h4>
-<p>The width of the Stryde window in pixels</p>
-<h4 id="height"><a class="header" href="#height"><strong>height</strong></a></h4>
-<p>The height of the Stryde window in pixels</p>
-<h2 id="text"><a class="header" href="#text"><code>[text]</code></a></h2>
-<h4 id="font_name"><a class="header" href="#font_name"><strong>font_name</strong></a></h4>
-<p>Change default font to a font installed on your system (example: “JetBrains Mono”)</p>
-<h4 id="list_text_size"><a class="header" href="#list_text_size"><strong>list_text_size</strong></a></h4>
-<p>Defines the font size for the list of applications</p>
-<h4 id="input_text_size"><a class="header" href="#input_text_size"><strong>input_text_size</strong></a></h4>
-<p>Defines the font size used in search bar</p>
-<h4 id="placeholder"><a class="header" href="#placeholder"><strong>placeholder</strong></a></h4>
-<p>Sets the placeholder text in search bar</p>
-<h2 id="layout"><a class="header" href="#layout"><code>[layout]</code></a></h2>
-<h4 id="icon_size"><a class="header" href="#icon_size"><strong>icon_size</strong></a></h4>
-<p>The size of icons in the application list</p>
-<h4 id="padding_vertical"><a class="header" href="#padding_vertical"><strong>padding_vertical</strong></a></h4>
-<p>Sets the padding at the top and bottom of the application list</p>
-<h4 id="spacing"><a class="header" href="#spacing"><strong>spacing</strong></a></h4>
-<p>Defines space between apps in the list</p>
-<h4 id="divider"><a class="header" href="#divider"><strong>divider</strong></a></h4>
-<p>If set to true, shows a divider line between the input field and the app list</p>
-<h2 id="behavior"><a class="header" href="#behavior"><code>[behavior]</code></a></h2>
-<h4 id="show_apps"><a class="header" href="#show_apps"><strong>show_apps</strong></a></h4>
-<p>Show application when you start the app (if set to false it will show apps only when you search)</p>
-<h4 id="close_on_launch"><a class="header" href="#close_on_launch"><strong>close_on_launch</strong></a></h4>
-<p>Close the Stryde after opening an application</p>
-<h4 id="highlight_style_text"><a class="header" href="#highlight_style_text"><strong>highlight_style_text</strong></a></h4>
-<p>If set to true, the selected app will be highlighted using text color instead of background</p>
-<h4 id="default_terminal"><a class="header" href="#default_terminal"><strong>default_terminal</strong></a></h4>
-<p>Specifies which terminal to use when opening terminal apps (like btop)</p>
-<h2 id="keybinds"><a class="header" href="#keybinds"><code>[keybinds]</code></a></h2>
-<h4 id="close"><a class="header" href="#close"><strong>close</strong></a></h4>
-<p>The key used to close the app</p>
-<h4 id="open"><a class="header" href="#open"><strong>open</strong></a></h4>
-<p>The key used to open the selected app</p>
-<h4 id="navigation"><a class="header" href="#navigation"><strong>navigation</strong></a></h4>
-<p>Keys used to navigate the app list: the first key moves up, the second moves down (default: [“arrowup”, “arrowdown”])</p>
+                        <ol>
+<li>“enter”</li>
+<li>“escape”</li>
+<li>“tab”</li>
+<li>“arrowup”</li>
+<li>“arrowdown”</li>
+<li>“arrowleft”</li>
+<li>“arrowright”</li>
+<li>“capslock”</li>
+<li>“f1”</li>
+<li>“f2”</li>
+<li>“f3”</li>
+<li>“f4”</li>
+<li>“f5”</li>
+<li>“f6”</li>
+<li>“f7”</li>
+<li>“f8”</li>
+<li>“f9”</li>
+<li>“f10”</li>
+<li>“f11”</li>
+<li>“f12”</li>
+<li>“print”</li>
+<li>“delete”</li>
+<li>“alt”</li>
+<li>“numlock”</li>
+<li>“fn”</li>
+<li>“control”</li>
+<li>“shift”</li>
+<li>“super”</li>
+<li>“backspace”</li>
+<li>“space”</li>
+<li>“home”</li>
+<li>“end”</li>
+<li>“pageup”</li>
+<li>“pagedown”</li>
+<li>“insert”</li>
+</ol>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="config_file.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
 
-                            <a rel="next prefetch" href="keys.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="theme.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -271,8 +230,11 @@ and replace the value with your filename:</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="config_file.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
 
-                    <a rel="next prefetch" href="keys.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="theme.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

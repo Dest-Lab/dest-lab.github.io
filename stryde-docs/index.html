@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Config file - Stryde Docs</title>
+        <title>Config file</title>
 
 
         <!-- Custom HTML head -->
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-402d4a05.js";
+            window.path_to_searchindex_js = "searchindex-d1a9299a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-fc34a395.js"></script>
+        <script src="toc-6c71945e.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -137,7 +137,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Stryde Docs</h1>
+                    <h1 class="menu-title"></h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -179,20 +179,33 @@
 <p>When you open the Stryde configuration file for the first time<br><code>~/.config/stryde/config.toml</code> you will see something like this</p>
 <pre><code class="language-toml">theme = "Stryde-Dark"
 antialiasing = false
+
+[window]
+width = 774
+height = 500
+
+[text]
 font_name = " "
-placeholder = "Type commands, search..."
-app_width = 774.0
-app_height = 500.0
 list_text_size = 16
 input_text_size = 18
+placeholder = "Type commands, search..."
+
+[layout]
 icon_size = 37
 padding_vertical = 0.0
 spacing = 5
-highlight_style_text = false
 divider = true
+
+[behavior]
 show_apps = true
 close_on_launch = true
+highlight_style_text = false
 default_terminal = "kitty"
+
+[keybinds]
+close = "escape"
+open = "enter"
+navigation = ["arrowup", "arrowdown"]
 </code></pre>
 <h4 id="theme"><a class="header" href="#theme"><strong>theme</strong></a></h4>
 <p>Specifies which theme file Stryde should load
@@ -203,41 +216,52 @@ and replace the value with your filename:</p>
 </code></pre>
 <h4 id="antialiasing"><a class="header" href="#antialiasing"><strong>antialiasing</strong></a></h4>
 <p>Enables smoothing for text and UI elements<br>Turning it on may improve visual quality but can reduce performance</p>
+<h2 id="window"><a class="header" href="#window"><code>[window]</code></a></h2>
+<h4 id="width"><a class="header" href="#width"><strong>width</strong></a></h4>
+<p>The width of the Stryde window in pixels</p>
+<h4 id="height"><a class="header" href="#height"><strong>height</strong></a></h4>
+<p>The height of the Stryde window in pixels</p>
+<h2 id="text"><a class="header" href="#text"><code>[text]</code></a></h2>
 <h4 id="font_name"><a class="header" href="#font_name"><strong>font_name</strong></a></h4>
 <p>Change default font to a font installed on your system (example: “JetBrains Mono”)</p>
-<h4 id="placeholder"><a class="header" href="#placeholder"><strong>placeholder</strong></a></h4>
-<p>Sets the placeholder text in search bar</p>
-<h4 id="app_width"><a class="header" href="#app_width"><strong>app_width</strong></a></h4>
-<p>The width of the Stryde window in pixels</p>
-<h4 id="app_height"><a class="header" href="#app_height"><strong>app_height</strong></a></h4>
-<p>The height of the Stryde window in pixels</p>
 <h4 id="list_text_size"><a class="header" href="#list_text_size"><strong>list_text_size</strong></a></h4>
 <p>Defines the font size for the list of applications</p>
 <h4 id="input_text_size"><a class="header" href="#input_text_size"><strong>input_text_size</strong></a></h4>
 <p>Defines the font size used in search bar</p>
+<h4 id="placeholder"><a class="header" href="#placeholder"><strong>placeholder</strong></a></h4>
+<p>Sets the placeholder text in search bar</p>
+<h2 id="layout"><a class="header" href="#layout"><code>[layout]</code></a></h2>
 <h4 id="icon_size"><a class="header" href="#icon_size"><strong>icon_size</strong></a></h4>
 <p>The size of icons in the application list</p>
 <h4 id="padding_vertical"><a class="header" href="#padding_vertical"><strong>padding_vertical</strong></a></h4>
 <p>Sets the padding at the top and bottom of the application list</p>
 <h4 id="spacing"><a class="header" href="#spacing"><strong>spacing</strong></a></h4>
 <p>Defines space between apps in the list</p>
-<h4 id="highlight_style_text"><a class="header" href="#highlight_style_text"><strong>highlight_style_text</strong></a></h4>
-<p>If set to true, the selected app will be highlighted using text color instead of background</p>
 <h4 id="divider"><a class="header" href="#divider"><strong>divider</strong></a></h4>
 <p>If set to true, shows a divider line between the input field and the app list</p>
+<h2 id="behavior"><a class="header" href="#behavior"><code>[behavior]</code></a></h2>
 <h4 id="show_apps"><a class="header" href="#show_apps"><strong>show_apps</strong></a></h4>
 <p>Show application when you start the app (if set to false it will show apps only when you search)</p>
 <h4 id="close_on_launch"><a class="header" href="#close_on_launch"><strong>close_on_launch</strong></a></h4>
 <p>Close the Stryde after opening an application</p>
+<h4 id="highlight_style_text"><a class="header" href="#highlight_style_text"><strong>highlight_style_text</strong></a></h4>
+<p>If set to true, the selected app will be highlighted using text color instead of background</p>
 <h4 id="default_terminal"><a class="header" href="#default_terminal"><strong>default_terminal</strong></a></h4>
 <p>Specifies which terminal to use when opening terminal apps (like btop)</p>
+<h2 id="keybinds"><a class="header" href="#keybinds"><code>[keybinds]</code></a></h2>
+<h4 id="close"><a class="header" href="#close"><strong>close</strong></a></h4>
+<p>The key used to close the app</p>
+<h4 id="open"><a class="header" href="#open"><strong>open</strong></a></h4>
+<p>The key used to open the selected app</p>
+<h4 id="navigation"><a class="header" href="#navigation"><strong>navigation</strong></a></h4>
+<p>Keys used to navigate the app list: the first key moves up, the second moves down (default: [“arrowup”, “arrowdown”])</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
-                            <a rel="next prefetch" href="theme.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="keys.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -248,7 +272,7 @@ and replace the value with your filename:</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                    <a rel="next prefetch" href="theme.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="keys.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
